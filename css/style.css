@@ -2,13 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 
 html{
-    color: rgb(59, 56, 56);
+    color: rgb(56, 56, 56);
     font-family: Open Sans Condensed, sans-serif;
     font-size: 20px;
     text-align: justify;
     text-transform: none; 
     line-height: normal; 
-    font-weight: lighter;}
+    font-weight: 500;
+}
+
+#naviElér{
+    border: solid, brown;
+    border-radius: 10px;
+    background-color: brown;
+    color: orange;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 160px;
+    padding-left: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 1px;
+    
+} 
+#naviAkci{
+    border: solid, brown;
+    border-radius: 10px;
+    background-color: brown;
+    color: orange;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#naviÉtla{
+    border: solid, brown;
+    border-radius: 10px;
+    background-color: brown;
+    color: orange;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 195px;
+    padding-left: 195px;
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
 
 h1{
     font-family: Fondamento, cursive, sans-serif;
@@ -18,14 +60,35 @@ h1{
 h2{
     font-family: Fondamento, cursive, sans-serif;
     color: rgba(12, 212, 5, 0.822);
+    margin: 0px;
 }
 thead{font-family: Fondamento, cursive, sans-serif;
     color: rgba(12, 212, 5, 0.822);
     text-align: center;
-
+    font-size: 38px;
+}
+.td1{
+    width: 100px;
 }
 .td2{
-    width: 200px;
+    width: 1000px;
+}
+.akciók{
+    border: solid gold;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+    background-color: gold;
+    box-shadow: 5px 6px 8px brown;
+    
+}
+.akcimg{
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px   brown;
+}
+.akcmar{
+    margin: 0px;
 }
 
     
