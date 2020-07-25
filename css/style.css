@@ -1,2 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+
+html{
+    color: rgb(59, 56, 56);
+    font-family: Open Sans Condensed, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    text-transform: none; 
+    line-height: normal; 
+    font-weight: lighter;}
+
+h1{
+    font-family: Fondamento, cursive, sans-serif;
+    color: brown
+}
+
+h2{
+    font-family: Fondamento, cursive, sans-serif;
+    color: rgba(12, 212, 5, 0.822);
+}
+thead{font-family: Fondamento, cursive, sans-serif;
+    color: rgba(12, 212, 5, 0.822);
+    text-align: center;
+
+}
+.td2{
+    width: 200px;
+}
+
+    
+   
