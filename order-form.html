@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger rendelés</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                </div>
+                <div>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Email cím: *</label>
+                </div>
+                <div>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                </div>
+                <div>
+                    <input id="address" name="address" type="text">
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés: *</label>
+                </div>
+                <div>
+                    <textarea name="comment" id="comment" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Termék adatai</legend>
+                <span>Extre feltét:<span>
+                        <div>
+                            <input checked id="nothing" name="extra" type="radio" value="0">
+                            <label for="nothing">Nem kérek</label>
+                        </div>
+                        <div>
+                            <input id="chesse" name="extra" type="radio" value="300">
+                            <label for="">Sajt (+ 300 Ft.)</label>
+                        </div>
+                        <div>
+                            <input id="bacon" name="extra" type="radio" value="400">
+                            <label for="">Bacon (+ 400 Ft.)</label>
+                        </div>
+                        <div>
+                            <input id="double-meat" name="extra" type="radio" value="1000">
+                            <label for="">Dupla hús (+ 1000 FT.) </label>
+                        </div>
+                        <div>
+                            <input id="chesse-bacon" name="extra" type="radio" value="1600">
+                            <label for="">Sajt és bacon (+ 700 Ft.)</label>
+                        </div>
+                        <div>
+                            <input id="chesse-doublemeat" name="extra" type="radio" value="1300">
+                            <label for="">Sajt és dupla hús (+ 1300 Ft.)</label>
+                        </div>
+                        <div>
+                            <label for="sauce">Szósz</label>
+                        </div>
+                        <div> <select name="sauce" id="sauce">
+                                <option value="0" selected>Hagyományos</option>
+                                <option value="100">Csípős</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="quantity">Menniség: </label>
+                        </div>
+                        <div>
+                            <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
+                        </div>
+                        <div>
+            </fieldset>
+
+            <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+    </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
