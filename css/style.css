@@ -86,11 +86,9 @@ thead{font-family: Fondamento, cursive, sans-serif;
     text-align: center;
     font-size: 38px;
 }
-.td1{
-    width: 100px;
-}
+
 .td2{
-    width: 1000px;
+    width: 1100px;
 }
 .akciók{
     border: solid gold;
@@ -108,4 +106,10 @@ thead{font-family: Fondamento, cursive, sans-serif;
 }
 .akcmar{
     margin: 0px;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: lightgreen;
 }
