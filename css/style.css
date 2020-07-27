@@ -9,6 +9,7 @@ html{
     text-transform: none; 
     line-height: normal; 
     font-weight: 500;
+    background-color: yellow;
 }
 .navi{
     color: orange;
