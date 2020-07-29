@@ -23,7 +23,7 @@
     <div class="container">
         <form>
             <fieldset>
-                <legend>Személyes adatok</legend>
+                <legend class="rendOld">Személyes adatok</legend>
                 <div>
                     <label for="name">Név: *</label>
                 </div>
@@ -51,8 +51,8 @@
             </fieldset>
 
             <fieldset>
-                <legend>Termék adatai</legend>
-                <span>Extre feltét:<span>
+                <legend class="rendOld">Termék adatai</legend>
+                <span class="rendOldKis">Extre feltét:</span>
                         <div>
                             <input checked id="nothing" name="extra" type="radio" value="0">
                             <label for="nothing">Nem kérek</label>
@@ -78,7 +78,7 @@
                             <label for="">Sajt és dupla hús (+ 1300 Ft.)</label>
                         </div>
                         <div>
-                            <label for="sauce">Szósz</label>
+                            <label for="sauce" class="rendOldKis">Szósz</label>
                         </div>
                         <div> <select name="sauce" id="sauce">
                                 <option value="0" selected>Hagyományos</option>
@@ -86,7 +86,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="quantity">Menniség: </label>
+                            <label for="quantity" class="rendOldKis">Menniség: </label>
                         </div>
                         <div>
                             <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
