@@ -24,37 +24,29 @@
     <h1>Hamburger rendelés</h1>
     <div class="row">
         <div class="col-2" style="background-color: yellow;"></div>
-        <div class="col-3"></div>
-        <div class="col-3">
+        <div class="col-2"></div>
+        <div class="col-4">
             <form>
-                <fieldset>
-                    <legend class="rendOld">Személyes adatok</legend>
-                    <div>
+                <h2>Személyes adatok</h2>
+                <form>
+                    <div class="form-group">
                         <label for="name">Név: *</label>
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
-                    <div>
-                        <input id="name" name="name" type="text">
+                    <div class="form-group">
+                        <label for="email">Email: *</label>
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
-                    <div>
-                        <label for="email">Email cím: *</label>
-                    </div>
-                    <div>
-                        <input id="email" name="email" type="email">
-                    </div>
-                    <div>
+                    <div class="form-group">
                         <label for="address">Cím: *</label>
+                        <input type="text" class="form-control" id="address" name="address">
                     </div>
-                    <div>
-                        <input id="address" name="address" type="text">
+                    <div class="form-group">
+                        <label for="comment">Megjegyzés:</label>
+                        <textarea class="form-control" id="comment" rows="5"></textarea>
                     </div>
-                    <div>
-                        <label for="comment">Megjegyzés: *</label>
-                    </div>
-                    <div>
-                        <textarea name="comment" id="comment" rows="10"></textarea>
-                    </div>
-                </fieldset>
-
+                </form>
+                <form>
                 <fieldset>
                     <legend class="rendOld">Termék adatai</legend>
                     <span class="rendOldKis">Extre feltét:</span>
@@ -86,8 +78,8 @@
                         <label for="sauce" class="rendOldKis">Szósz</label>
                     </div>
                     <div> <select name="sauce" id="sauce">
-                            <option value="0" selected>Hagyományos</option>
-                            <option value="100">Csípős</option>
+                            <option value="0" selected>Hagyományos, benne van az árban.</option>
+                            <option value="100">Csípős + 100 Ft</option>
                         </select>
                     </div>
                     <div>
@@ -97,7 +89,7 @@
                         <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
                     </div>
                 </fieldset>
-                <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+                <input  class="btn btn-success" type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
             </form>
         </div>
         <div class="col-2"></div>
