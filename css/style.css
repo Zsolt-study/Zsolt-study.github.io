@@ -9,20 +9,14 @@ html{
     text-transform: none; 
     line-height: normal; 
     font-weight: 500;
-    
-}
-#yellow{
-    background-color: yellow;
-}
+    }
+
 .navi{
     color: orange;
-    
-   
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 1px;
-   
-    font-family: Fondamento, cursive, sans-serif;
+   font-family: Fondamento, cursive, sans-serif;
 }
 .tdn1{
     width: 325px;
