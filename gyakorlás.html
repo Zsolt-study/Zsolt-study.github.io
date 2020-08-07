@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akcióink</title>
+    <title>Hamburger rendelés</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-
 </head>
 
 <body>
@@ -22,61 +21,82 @@
             </tr>
         </table>
     </div>
-
-    <h1>Akcióink</h1>
+    <h1>Hamburger rendelés</h1>
     <div class="row">
         <div class="col-2" style="background-color: yellow;"></div>
-        <div class="col-8">
-            <div class="akciók">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Kérd menüben! Olcsóbb!</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Amennyiben italt és sült krumplit is rendelsz a hamburgered mellé, kérd "menüben".
-                                A teljes összeg árából 10% kedvezményt kapsz. </td>
-                            <td><img id="img1" class="akcimg" src="/img/hamburger_menu.png" alt="menü"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="akciók">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Gyermeknapi akció.</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Érdemes gyermeknapon is nálunk étkezni, mert minden gyermekhamburger mellé
-                                meglepetést adunk ( 4 év alatti gyermekek részére). </td>
-                            <td><img class="akcimg" src="/img/gyermeknap.png" alt="gyermeknap"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="akciók">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Heti akció.</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Szeresd a csípőset! A chilis hamburger most csak 1290 Ft! ........................................</td>
-                            <td><img class="akcimg" src="/img/barbecued-burger.jpg" alt="chiliburger"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="col-2"></div>
+        <div class="col-4">
+                <h2>Személyes adatok</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Név: *</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: *</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Cím: *</label>
+                        <input type="text" class="form-control" id="address" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Megjegyzés:</label>
+                        <textarea class="form-control" id="comment" rows="5"></textarea>
+                    </div>
+                </form>
+                <form>
+                <fieldset>
+                    <legend class="rendOld">Termék adatai</legend>
+                    <span class="rendOldKis">Extre feltét:</span>
+                    <div>
+                        <input checked id="nothing" name="extra" type="radio" value="0">
+                        <label for="nothing">Nem kérek</label>
+                    </div>
+                    <div>
+                        <input id="chesse" name="extra" type="radio" value="300">
+                        <label for="chesse">Sajt (+ 300 Ft.)</label>
+                    </div>
+                    <div>
+                        <input id="bacon" name="extra" type="radio" value="400">
+                        <label for="bacon">Bacon (+ 400 Ft.)</label>
+                    </div>
+                    <div>
+                        <input id="double-meat" name="extra" type="radio" value="1000">
+                        <label for="double-meat">Dupla hús (+ 1000 FT.) </label>
+                    </div>
+                    <div>
+                        <input id="chesse-bacon" name="extra" type="radio" value="1600">
+                        <label for="chesse-bacon">Sajt és bacon (+ 700 Ft.)</label>
+                    </div>
+                    <div>
+                        <input id="chesse-doublemeat" name="extra" type="radio" value="1300">
+                        <label for="chesse-doublemeat">Sajt és dupla hús (+ 1300 Ft.)</label>
+                    </div>
+                    <div>
+                        <label for="sauce" class="rendOldKis">Szósz</label>
+                    </div>
+                    <div> <select name="sauce" id="sauce">
+                            <option value="0" selected>Hagyományos</option>
+                            <option value="100">Csípős + 100 Ft</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="quantity" class="rendOldKis">Mennyiség: </label>
+                    </div>
+                    <div>
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
+                    </div>
+                </fieldset>
+                <input  class="btn btn-success" type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+            </form>
         </div>
-        <div class="col-2" style="background-color: yellow;"></div>
+        <div class="col-2"></div>
+        <div class="col-2" style="background-color: yellow"></div>
     </div>
+
+<script src="/js/main.js"></script>
+
 </body>
 
 </html>
