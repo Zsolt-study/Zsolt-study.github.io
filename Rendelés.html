@@ -65,7 +65,7 @@
                         <label for="double-meat">Dupla hús (+ 1000 FT.) </label>
                     </div>
                     <div>
-                        <input id="chesse-bacon" name="extra" type="radio" value="1600">
+                        <input id="chesse-bacon" name="extra" type="radio" value="700">
                         <label for="chesse-bacon">Sajt és bacon (+ 700 Ft.)</label>
                     </div>
                     <div>
@@ -73,13 +73,15 @@
                         <label for="chesse-doublemeat">Sajt és dupla hús (+ 1300 Ft.)</label>
                     </div>
                     <div style="margin-top: 20px;">
-                        <label for="sauce" class="rendOldKis">Szósz:</label>
+                        <label for="sauce" class="rendOldKis">Szószok:</label>
                     </div>
                     <div>
-                        <select name="sauce" id="sauce">
-                            <option value="0" selected>Hagyományos</option>
-                            <option value="100">Csípős + 100 Ft</option>
-                        </select>
+                        <input checked id="classicSouce" name="souce" type="radio" value="0">
+                        <label for="chesse-doublemeat">Hagyományos</label>
+                    </div>
+                    <div>
+                        <input id="hotSouce" name="souce" type="radio" value="100">
+                        <label for="chesse-doublemeat">Chilis ( + 100 Ft.)</label>
                     </div>
                     <div style="margin-top: 20px;">
                         <label for="quantity" class="rendOldKis">Mennyiség: </label>
@@ -88,12 +90,16 @@
                         <input type="number" id="quantity" name="quantity" min="0" max="10" value="1" required>
                     </div>
                     <div style="margin-top: 35px;">
-                        <input class="btn btn-success" type="button" value="Rendelés leadása"> Ár: <span class="message"
-                            id="message">1200</span> Ft
+                        Fizetendő: <span class="show-amount">0</span> Ft.
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input onclick="calcAmount()" class="btn btn-success" type="button" value="Rendelés leadása">
                     </div>
                 </fieldset>
             </form>
+            <h2 style="margin-top: 35px;">Jó étvágyat kívánunk! </h2>
         </div>
+
         <div class="col-2"></div>
         <div class="col-2" style="background-color: yellow;"></div>
     </div>
