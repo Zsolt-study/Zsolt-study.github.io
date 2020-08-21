@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger rendelés</title>
+    <title>Rendelés</title>
     <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -45,6 +45,7 @@
                     <textarea class="form-control" id="comment" name="comment" rows="5"></textarea>
                 </div>
             </form>
+            <h5>Hamburger 1200 Ft.</h5>
             <form>
                 <fieldset>
                     <h2>Extra feltétek</h2>
@@ -72,28 +73,29 @@
                         <input id="chesse-doublemeat" name="extra" type="radio" value="1300">
                         <label for="chesse-doublemeat">Sajt és dupla hús (+ 1300 Ft.)</label>
                     </div>
+
                     <div style="margin-top: 20px;">
                         <label for="sauce" class="rendOldKis">Szószok:</label>
+                        <select name="sauce" id="sauce">
+                            <option value="0">Hagyományos</option>
+                            <option value="100">Chilis (+ 100 Ft.)</option>
+                        </select>
+
                     </div>
-                    <div>
-                        <input checked id="classicSouce" name="souce" type="radio" value="0">
-                        <label for="chesse-doublemeat">Hagyományos</label>
-                    </div>
-                    <div>
-                        <input id="hotSouce" name="souce" type="radio" value="100">
-                        <label for="chesse-doublemeat">Chilis ( + 100 Ft.)</label>
-                    </div>
+                   
                     <div style="margin-top: 20px;">
                         <label for="quantity" class="rendOldKis">Mennyiség: </label>
                     </div>
                     <div>
                         <input type="number" id="quantity" name="quantity" min="0" max="10" value="1" required>
+                        <small class="form-text text-muted">Minimum 1, maximum 10 darab.</small>
                     </div>
                     <div style="margin-top: 35px;">
-                        Fizetendő: <span class="show-amount">0</span> Ft.
+                        Fizetendő: <span class="message" id="message">0</span> Ft.
                     </div>
                     <div style="margin-top: 15px;">
                         <input onclick="calcAmount()" class="btn btn-success" type="button" value="Rendelés leadása">
+                        <small class="form-text text-muted">5000 Ft összegű rendelés alatt, 500 Ft házhozszállítási díjat számitunk fel!</small>
                     </div>
                 </fieldset>
             </form>
